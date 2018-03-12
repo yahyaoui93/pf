@@ -1,0 +1,35 @@
+# config context path to "/" by setting an empty string
+server:
+  contextPath:
+
+# JACKSON
+spring:
+  jackson:
+    serialization:
+      INDENT_OUTPUT: true
+
+jwt:
+  header: Authorization
+  secret: mySecret
+  expiration: 604800
+  secret2: passwordSecret
+  expiration2: 604800
+  header_start: MaxiLog
+
+activationEmail:
+  from: seGuider <sonictn99@gmail.com>
+  subject: Votre compte seGuider
+  text: <b>Bonjour Monsieur {name}</b> <br> Please Click on the link to verify your email.<br><a href={link}>Click here to verify</a>
+
+resetPasswordEmail:
+  from: seGuider <sonictn99@gmail.com>
+  subject: Reset password seGuider
+  text: <b>Bonjour Monsieur {name}</b> <br> Please Click on the link to reset your password.<br><a href={link}>Click here to reset</a>
+
+myHost: http://localhost:5678
+
+
+#logging:
+#  level:
+#    org.springframework:
+#      security: DEBUG

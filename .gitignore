@@ -1,0 +1,8 @@
+/.idea
+/.vscode
+/uploads/*
+/target
+.project
+.classpath
+*.launch
+.settings/
